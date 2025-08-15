@@ -44,6 +44,7 @@ if submitted:
 
         if isinstance(output, list) and output:
             st.subheader("📄 Output Records")
+            st.write(f"🔢 Total Records Found: {len(output)}")
 
             # Prepare data for download
             df = pd.DataFrame(output)
@@ -79,4 +80,5 @@ if submitted:
                             st.image(url, caption="Document Image", use_container_width=True)
         else:
             st.info("ℹ️ No records found for the given criteria.")
+
 
