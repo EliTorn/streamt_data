@@ -76,6 +76,7 @@ if submitted:
                     if images:
                         st.markdown("**Images:**")
                         for url in images:
-                            st.image(url, caption="Document Image", use_column_width=True)
+                            st.image(url, caption="Document Image", use_container_width=True)
         else:
             st.info("ℹ️ No records found for the given criteria.")
+
